@@ -1,0 +1,92 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#636fa4, #e8cbc0);
+}
+
+.piano {
+  display: flex;
+  position: relative;
+  margin-left: 4px;
+  border: 500px;
+}
+
+.white-key {
+  width: 60px;
+  height: 190px;
+  background-color: #fff;
+  border: 4px solid black;
+  border-radius: 0 0 6px 6px;
+  margin-left: -4px;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-colo
+}
+^
+.white-key.active {
+  background-color: #c0c0c0;
+}
+
+.black-key {
+  position: absolute;
+  width: 24px;
+  height: 100px;
+  background-color: rgb(0, 0, 0);
+  border: 3px solid black;
+  border-radius: 0 0 2px 2px;
+  box-shadow: 5px 5px 5px black;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+}
+
+.black-key.active {
+  background-image: linear-gradient(#000000, #101010);
+}
+
+
+.a-key {
+  left: 41px;
+}
+
+
+.z-key {
+  left: 97px;
+}
+
+.e-key {
+  left: 210px;
+}
+
+
+
+.r-key {
+  left: 266px;
+}
+
+.t-key {
+  left: 322px;
+}
+
+.u-key {
+  left: 377px;
+}
+
+.i-key {
+  left: 434px;
+}
+
+#contour_piano > body {
+ z-index: 1;
+ border-width: 250px;
+}
